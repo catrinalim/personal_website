@@ -34,15 +34,95 @@ section {
 section h1, section h2 {
   margin-bottom: 20px;
 }
-body{
+
+body {
   padding:0;
   margin:0;
   font-family: 'Montserrat', sans-serif;
 }
-h1{
+
+h1 {
   font-size:60px;
   text-align:center;
 }
+
+.timeline {
+  max-width: 800px;
+  /* margin: 50px auto; */
+  position: relative;
+}
+
+.timeline .entry {
+  display: flex;
+}
+
+.timeline .left {
+  flex: 1;
+  padding-right: 20px;
+  text-align: right;
+}
+
+.timeline .logo {
+  margin-top: 20px;
+}
+
+
+.timeline .company,
+.timeline .position,
+.timeline .dates {
+  margin: 10px 0;
+}
+
+.timeline .middle {
+  flex: 0 0 20px;
+  position: relative;
+  color: white;
+}
+
+
+.timeline .circle {
+  width: 20px;
+  height: 20px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/*
+.timeline .middle {
+  flex: 0 0 20px; 
+  background-color: white;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+*/
+
+.timeline .right {
+  flex: 2;
+}
+
+.timeline .right p {
+  margin: 0;
+  padding: 10px;
+}
+
+.timeline .middle::before {
+  content: ""; /* Add this line to set content for the ::before pseudo-element */
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 10px;
+  border-left: 2px solid white;
+  z-index: 0;
+}
+
+/* 
 .timeline{
   position:relative;
   margin:50px auto;
@@ -50,6 +130,7 @@ h1{
   width:1000px;
   box-sizing:border-box;
 }
+
 .timeline:before{
   content:'';
   position:absolute;
@@ -58,10 +139,12 @@ h1{
   height:100%;
   background:#c5c5c5;
 }
+
 .timeline ul{
   padding:0;
   margin:0;
 }
+
 .timeline ul li{
   list-style:none;
   position:relative;
@@ -69,19 +152,23 @@ h1{
   padding:20px 40px;
   box-sizing:border-box;
 }
-.timeline ul li:nth-child(odd){
+
+.timeline ul li:nth-child(odd) {
   float:left;
   text-align:right;
   clear:both;
 }
-.timeline ul li:nth-child(even){
+
+.timeline ul li:nth-child(even) {
   float:right;
   text-align:left;
   clear:both;
 }
-.content{
+
+.timeline content {
   padding-bottom:20px;
 }
+
 .timeline ul li:nth-child(odd):before
 {
   content:'';
@@ -185,6 +272,7 @@ h1{
     right:inherit;
   }
 }
+*/
 
 /* card arrangements */
 .card-content {
