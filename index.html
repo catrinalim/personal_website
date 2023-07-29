@@ -10,14 +10,20 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
+  <nav>
+    <div class="navContainer">
+      <div class="navName"><h1>Catrina Lim</h1></div>
+      <div class="navLinks">
         <ul>
-            <li><a href="#aboutMe">About Me</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contactInfo">Contact Information</a></li>
+          <li><a href="#aboutMe">About Me</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contactInfo">Contact Information</a></li>
         </ul>
-    </nav>
+      </div>
+    </div>
+  </nav>
+    
 
     <!-- About Me -->
     <section id="aboutMe">
@@ -29,55 +35,9 @@
 
     <!-- Experience -->
     <section id="experience">
-        <div class="content">
+        <div class="whiteContent">
             <h2>Experience</h2>
             <p>experience content</p>
-            <!--
-            <div class="timeline">
-                <ul>
-                  <li>
-                    <div class="content">
-                      <h3>Software Engineer Intern</h3>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-                    </div>
-                    <div class="time">
-                      <h4>June 2023 - August 2023</h4>
-                    </div>
-                  </li>
-                  
-                  <li>
-                    <div class="content">
-                      <h3>Student Assistant - Office of Provost</h3>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-                    </div>
-                    <div class="time">
-                      <h4>August 2023 - May 2023</h4>
-                    </div>
-                  </li>
-                  
-                  <li>
-                    <div class="content">
-                      <h3>Mision Control Software Team Member</h3>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-                    </div>
-                    <div class="time">
-                      <h4>January 2022 - May 2022</h4>
-                    </div>
-                  </li>
-                  
-                  <li>
-                    <div class="content">
-                      <h3>Position Title/h3>
-                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. </p>
-                    </div>
-                    <div class="time">
-                      <h4>Dates</h4>
-                    </div>
-                  </li>
-                  <div style="clear:both;"></div>
-                </ul>
-              </div>
-              -->
               <div class="timeline">
                 <div class="entry">
                   <div class="left">
@@ -93,19 +53,22 @@
                     <p>Description of the job goes here...</p>
                   </div>
                 </div>
-                <!-- Add more .entry divs for other job experiences -->
+                <!-- Northrop Grumman -->
                 <div class="entry">
                     <div class="left">
-                      <div class="logo">Logo 1</div>
-                      <div class="company">Company Name</div>
-                      <div class="position">Position Title</div>
-                      <div class="dates">Start Date - End Date</div>
+                      <div class="logo"><img src="images/northropGrumman.png" width="150"></div>
+                      <div class="company">Northrop Grumman</div>
+                      <div class="position">Software Engineer Intern</div>
+                      <div class="dates">June 2023 - August 2023</div>
                     </div>
                     <div class="middle">
                       <div class="circle"></div>
                     </div>
                     <div class="right">
-                      <p>Description of the job goes here...</p>
+                      <p>
+                        Designed and devloped a data verification tool to verify received satellite remote sensory data is accurate and complete.
+                        Utilized JSON, Python, and an external Python library (Cerberus) to create a Command Line Interfce that ensured 100% accuracy of data and text data.
+                      </p>
                     </div>
                   </div>
                   <!-- another entry-->
