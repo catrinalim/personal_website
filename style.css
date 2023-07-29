@@ -8,6 +8,17 @@ body {
   padding: 0;
 }
 
+a:hover {
+  color:#b19cd9;
+}
+
+::selection {
+  background: #b19cd9;
+}
+::-moz-selection {
+  background: #b19cd9;
+}
+
 .navContainer {
   display: flex;
   align-items: center;
@@ -73,39 +84,40 @@ h1 {
 }
 
 .aboutMe {
-  padding: 50px 50px;
-  display: block;
+  margin: 50px 50px;
+  max-width: 1000;
 }
 
 .amContents {
-  padding: 0 200px;
+  margin: 0 200px;
 }
 
+/* resizing purposes */
 @media (max-width: 768px) {
-  .amContents .amContents {
+  .amContents {
     width: 80%;
     margin: 15px auto;
   }
 }
 
-.aboutMe .amContents img {
-  padding-right: 50px;
+.aboutMe img {
+  margin-right: 50px;
   width: 125px;
   height: 167px;
 }
 
 .aboutMe .amContents p {
   text-align: left;
-  padding-left: 50px;
+  margin-left: 50px;
 }
 
 .whiteContent {
   background-color: white;
   color: black;
   width: 100%;
-  margin: 0;
-  padding: 75px 0;
   box-sizing: border-box;
+  margin: 50px 0;
+  padding: 50px;
 }
 
 /* TIMELINE */
