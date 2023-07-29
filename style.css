@@ -110,7 +110,7 @@ h1 {
 
 /* TIMELINE */
 .timeline {
-  max-width: 800px;
+  max-width: 1000px;
   position: relative;
   color: black;
 }
@@ -188,6 +188,7 @@ h1 {
   height: 300px;
   perspective: 1000px;
   margin-bottom: 20px;
+  cursor: pointer;
 }
 
 .flip-card-inner {
@@ -200,7 +201,7 @@ h1 {
 }
 
 /* flips cards */
-.flip-card:hover .flip-card-inner {
+.flip-card.hover .flip-card-inner {
   transform: rotateY(180deg);
 }
 
@@ -210,13 +211,9 @@ h1 {
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
-}
-
-/* Physical attributes of card */
-.flip-card-front,
-.flip-card-back {
   background-color: rgb(227, 227, 227);
   color: black;
+  border-radius: 10px;
 }
 
 .flip-card-back {
@@ -226,8 +223,7 @@ h1 {
 .flip-card .flip-card-front p,
 .flip-card .flip-card-back p {
   font-size: 16px;
-  margin: 15px 15px;
+  margin: 30px 30px;
   color: #333;
   text-align: left;
-
 }
