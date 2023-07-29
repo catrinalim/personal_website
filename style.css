@@ -72,6 +72,12 @@ h1 {
   text-align:center;
 }
 
+.aboutMe {
+  display: flex;
+  padding: 15px 15px;
+}
+
+
 .whiteContent {
   background-color: white;
   color: black;
