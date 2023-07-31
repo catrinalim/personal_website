@@ -8,16 +8,34 @@ body {
   padding: 0;
 }
 
-a:hover {
-  color:#b19cd9;
+a:hover,
+a:visited {
+  color:#2d5948;
 }
 
 ::selection {
-  background: #b19cd9;
+  color: white;
+  background-color: #2d5948;
 }
-::-moz-selection {
-  background: #b19cd9;
+
+.header {
+  margin: 0 0;
 }
+
+.header img {
+  width: 100%;
+}
+
+.header .headerText {
+  text-align: center;
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
 
 .navContainer {
   display: flex;
@@ -207,14 +225,13 @@ h1 {
 .flip-card:hover .flip-card-front,
 .flip-card:hover .flip-card-back {
   border-radius: 15px;
-  border: 4px solid #b19cd9;
+  border: 4px solid #2d5948;
 }
 
 .flip-card-inner {
   position: relative;
   width: 100%;
   height: 100%;
-  text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
 }
@@ -242,8 +259,12 @@ h1 {
 .flip-card .flip-card-front p,
 .flip-card .flip-card-back p {
   font-size: 16px;
-  margin: 30px 30px;
+  padding: 15px 20px;
   color: #333;
+}
+
+.flip-card .flip-card-back hr 
+.flip-card .flip-card-back p {
   text-align: left;
 }
 
