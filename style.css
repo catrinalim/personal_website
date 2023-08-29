@@ -225,7 +225,7 @@ h1 {
 .flip-card:hover .flip-card-front,
 .flip-card:hover .flip-card-back {
   border-radius: 15px;
-  border: 4px solid #66a0af;
+  background-color: #66a0af;
 }
 
 .flip-card-inner {
