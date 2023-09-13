@@ -118,6 +118,28 @@ h1 {
   }
 }
 
+@media (max-width: 768px) {
+  .aboutMe {
+    margin: 20px 20px;
+  }
+
+  .amContents {
+    margin: 0 20px;
+  }
+
+  .aboutMe img {
+    margin-right: 0;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 200px; /* Adjust the image size as needed */
+  }
+
+  .aboutMe .amContents p {
+    text-align: left;
+    margin-left: 0;
+  }
+}
+
 .aboutMe img {
   margin-right: 50px;
   width: 125px;
