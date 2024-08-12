@@ -1,62 +1,47 @@
 @import url(//fonts.googleapis.com/css?family=Ubuntu:regular,bold&subset=Latin);
 
-body {
-  background-color: #0d1117;
-  font-family: 'Ubuntu';
-  color: white;
-  margin: 0;
-  padding: 0;
-}
-
 a:hover,
 a:visited {
-  color:#66a0af;
+  color:rgb(211, 167, 238);
 }
 
-::selection {
-  color: white;
-  background-color: #66a0af;
+body {
+  background-color: #170222;
+  font-family: 'Ubuntu';
+  color: #f8e7f9;
 }
 
-.header {
-  margin: 0 0;
+nav {
+  background-color: #170222;
+  color: #f8e7f9;
 }
 
-.header img {
-  width: 100%;
-}
-
-.header .headerText {
+/*Contact*/
+.contactInfo {
+  display: flex;
+  justify-content: space-evenly;
   text-align: center;
-  color: white;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  flex: 1;
 }
 
+.contactInfo img {
+  width: 100px;
+}
 
-
-.navContainer {
+.navBar {
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.navContainer .navName {
+.navBar .navName {
   display: flex;
   justify-content: flex-start;
 }
 
-.navContainer .navLinks {
+.navBar .navLinks {
   display: flex;
   justify-content: flex-end;
-}
-
-nav {
-  background-color: #333;
-  color: #fff;
-  padding: 5px 10px;
 }
 
 nav h1 {
@@ -81,9 +66,16 @@ nav ul li a {
   text-align: center;
 }
 
+
+/* above is css code i reviewed already */
+
+::selection {
+  color: white;
+  background-color: #66a0af;
+}
+
 section {
-  padding: 50px 0;
-  text-align: center;
+  padding: 50px;
 }
 
 section h1, section h2 {
@@ -289,15 +281,3 @@ h1 {
   text-align: left;
 }
 
-.contactInfo {
-  margin: 35px;
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  flex: 1;
-}
-
-
-.contactInfo img {
-  width: 100px;
-}
