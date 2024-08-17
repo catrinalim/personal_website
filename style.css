@@ -121,7 +121,7 @@ h1 {
 
 /* resizing purposes */
 
-/*
+
 @media (max-width: 768px) {
   .amContents {
     width: 80%;
@@ -151,7 +151,6 @@ h1 {
     margin-left: 0;
   }
 }
-*/
 
 .aboutMe img {
   margin-right: 50px;
