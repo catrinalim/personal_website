@@ -56,6 +56,11 @@ nav {
   background-color: #0d1117;
   color: #fff;
   padding: 5px 10px;
+  position: fixed;
+  top: 0;
+  left:0;
+  width: 100%;
+  z-index: 10000;
 }
 
 nav h1 {
